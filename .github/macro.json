@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {
+      "name": "NEW_SESSION",
+      "path": "/Rube.app/NEW_SESSION",
+      "args": "{}"
+    },
+    {
+      "name": "CHECK_CONNECTION",
+      "path": "/Rube.app/RUBE_MANAGE_CONNECTIONS",
+      "args": "{'session_id': '$SID'}"
+    }
+  ]
+}

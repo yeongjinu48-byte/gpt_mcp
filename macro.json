@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {
+      "name": "TOOLS_LIST",
+      "path": "/tools/list",
+      "args": "{}"
+    },
+    {
+      "name": "PROMPTS_LIST",
+      "path": "/prompts/list",
+      "args": "{}"
+    }
+  ]
+}

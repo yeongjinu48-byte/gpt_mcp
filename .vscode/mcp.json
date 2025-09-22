@@ -1,0 +1,42 @@
+{
+    "servers": {
+        "zapier-mcp": {
+            "url": "https://mcp.zapier.com/api/mcp/s/NWU3M2MzNjItYzAzZS00NWU3LTg5YzYtMWEzNGNjM2ZiNzBiOjExZmU2MjQ5LWI5YTMtNDhiOC1iMzU3LWVmY2ViZTFmM2ZmZQ==/mcp",
+            "type": "http"
+        },
+        "rube-mcp": {
+            "url": "https://api.rube.co/Rube.app/v1",
+            "type": "http"
+        },
+        "browserbase-mcp": {
+            "name": "BrowserBase",
+            "type": "http",
+            "url": "https://api.browserbase.io/v1",
+            "tools": [
+                "BROWSERBASE_TOOL_CREATE_BROWSER_SESSION",
+                "BROWSERBASE_TOOL_SESSIONS_GET_LOGS",
+                "BROWSERBASE_TOOL_SESSIONS_GET_DEBUG",
+                "BROWSERBASE_TOOL_SESSIONS_GET_DOWNLOADS",
+                "BROWSERBASE_TOOL_CONTEXTS_CREATE",
+                "BROWSERBASE_TOOL_SESSIONS_LIST"
+            ]
+        },
+        "github-mcp": {
+            "name": "GitHub MCP",
+            "type": "http",
+            "url": "https://api.github.com",
+            "authentication": {
+                "type": "token",
+                "token": "${env:GITHUB_TOKEN}"
+            },
+            "tools": [
+                "GITHUB_LIST_ISSUES",
+                "GITHUB_CREATE_ISSUE",
+                "GITHUB_LIST_PULL_REQUESTS",
+                "GITHUB_CREATE_PULL_REQUEST",
+                "GITHUB_GET_REPOSITORY"
+            ]
+        }
+    },
+    "inputs": []
+}
