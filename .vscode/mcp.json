@@ -1,5 +1,15 @@
 {
     "servers": {
+        "sd-local": {
+            "type": "stdio",
+            "command": "python",
+            "args": [
+                "mcp_sd_server.py"
+            ],
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            }
+        },
         "zapier-mcp": {
             "url": "https://mcp.zapier.com/api/mcp/s/NWU3M2MzNjItYzAzZS00NWU3LTg5YzYtMWEzNGNjM2ZiNzBiOjExZmU2MjQ5LWI5YTMtNDhiOC1iMzU3LWVmY2ViZTFmM2ZmZQ==/mcp",
             "type": "http"
